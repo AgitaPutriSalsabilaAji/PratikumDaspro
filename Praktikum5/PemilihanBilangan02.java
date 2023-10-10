@@ -10,6 +10,6 @@ public class PemilihanBilangan02{
     String hasil;
     hasil = (angka % 2 == 0) ? "Bilangan genap" : "bilangan ganjil";
     System.out.println (angka + " adalah " + hasil);
-
+    sc.close();
 }  
 }

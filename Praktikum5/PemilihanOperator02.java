@@ -33,5 +33,6 @@ public class PemilihanOperator02 {
     {
         System.out.println("Operator yang dipilih tidak sesuai");
     }
+    sc.close();
     }
 }

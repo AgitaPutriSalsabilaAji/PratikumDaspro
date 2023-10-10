@@ -20,6 +20,6 @@ public class PemilihanHariDenganIf02{
     } else {
     System.out.println("invalid number");
     }
-
+    sc.close();
     }
 }

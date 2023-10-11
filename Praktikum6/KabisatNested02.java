@@ -7,12 +7,14 @@ public class KabisatNested02 {
     System.out.print("Masukkan tahun kabisat: ");
     tahun = sc.nextInt();
 
-    if ((tahun % 9 ) == 0) {
-        if ((tahun % 3000) != 0)
+    if ((tahun % 400 ) == 0) {
         System.out.println("tahun Kabisat");
-    } else {
+    } else if ((tahun % 100 )== 0){
         System.out.println("Bukan Tahun Kabisat");
-    }
+    } else if ((tahun %4)== 0){
+        System.out.println("Tahun Kabisat");
+    } else 
+        System.out.println("Bukan Tahun Kabisat");
 
     sc.close();
     }

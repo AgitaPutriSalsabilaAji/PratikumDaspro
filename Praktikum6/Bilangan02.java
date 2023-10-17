@@ -11,19 +11,16 @@ public class Bilangan02 {
     System.out.print("Masukkan bil 3: ");
     bil3 = sc.nextInt();
 
-    if (bil1 >= bil2){
-        if (bil1 >= bil2){
-            System.out.print("Bilangan Terbesar " + bil1);
-        }else {
-            System.out.print("Bilangan Terbesar " + bil3);
-        }
-    } else {
-        if (bil1 >= bil3){
-            System.out.print("Bilangan Terbesar " + bil2);
-        } else {
-            System.out.println("Bilangan Terbesar " + bil3);
-        }
-    }
+    int max = Math.max(bil1, Math.max(bil2, bil3));
+
+    int min = Math.min(bil1, Math.min(bil2, bil3));
+
+    int middle = bil1 + bil2 + bil3 - max - min;
+    
+    System.out.println("Bilangan maksimum : " + max);
+    System.out.println("Bilangan minimum : " + min);
+    System.out.println("Bilangan middle : " + middle);
+
     sc.close();
     }
 }

@@ -1,22 +1,25 @@
 import java.util.Scanner;
 public class ForKelipatan02 {
     public static void main(String[] args) {
-    Scanner input = new Scanner (System.in);
+    Scanner sc = new Scanner (System.in);
+    double rataRata;
     int bilangan, total, counter;
     total = 0;
     counter = 0;
 
-    System.out.print("Masukkan bilangan 1 - 9: ");
-    bilangan = input.nextInt();
+    System.out.print("Masukkan jumlah Karyawan: ");
+    bilangan = sc.nextInt();
 
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 50; ++i) {
         if (i % bilangan == 0) {
             total += i;
-            counter++;
+            ++counter;
         }
     }
-    System.out.printf("Pada rentang 1-50 terdapat %d bilangan kelipatan 5 dengan total %d", counter, bilangan, total);
+    System.out.printf("Pada rentang 1-50 %d dengan total %d/n", counter, bilangan, total);
+    rataRata = (double) total / counter;
+    System.out.println("Rata-rata: " + rataRata);
 
-    input.close();
+    sc.close();
     }
 }

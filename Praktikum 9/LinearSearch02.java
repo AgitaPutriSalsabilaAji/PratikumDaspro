@@ -12,18 +12,20 @@ public class LinearSearch02 {
     for (int i = 0; i < arrayInt.length; i++) {
         System.out.print("Masukkan elemen array yang ke-" + (i) + ": ");
         arrayInt[i] = sc.nextInt();
-        } System.out.print("Masukkan key yang ingin dicari: ");
+        } 
+        System.out.print("Masukkan key yang ingin dicari: ");
         key = sc.nextInt();
+        
         for(int i = 0; i < arrayInt.length; i++) {
             if (arrayInt[i] == key) {
                 hasil = i;
-                System.out.print("Key dalam array pada posisi indeks ke- " + hasil);
-                break;
-            }else{
-                System.out.print("Key tidak ditemukan");
+                System.out.print("Key ada dalam array pada indeks ke- " + i);
                 break;
             }
         }
+        if (hasil == -1) {
+            System.out.println("Key tidak ditemukan");
+        } 
 
     }
 }

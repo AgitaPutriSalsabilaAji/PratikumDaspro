@@ -14,7 +14,7 @@ public class Segitiga02 {
     if (sudut1 == sudut2 && sudut2 == sudut3) {
         System.out.println("Segitiga Sama Sisi");
     } else if (sudut1 == sudut2 || sudut2 == sudut3) {
-        System.out.println("Segitigas Sama Kaki");
+        System.out.println("Segitiga Sama Kaki");
     } else {
         System.out.println("Segitiga Sembarang");
     }

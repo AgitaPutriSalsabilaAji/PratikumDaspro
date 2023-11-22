@@ -5,8 +5,8 @@ public class NestedLoop02 {
 
     System.out.print("Masukkan jumlah kota: ");
     int jumlahKota = sc.nextInt();
+    double[][] suhu = new double[jumlahKota][4];
     
-    double[][] suhu = new double[2][4];
     for (int i = 0; i < suhu.length; i++) {
         System.out.println("KOTA KE-" + (i + 1));
 
